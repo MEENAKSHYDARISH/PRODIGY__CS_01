@@ -20,5 +20,14 @@ endCode=False
 while not endCode:
   username=input("Type encrypt for encryption and decrypt for decryption: ")
   txt=input("type the message")
+  shift=int(input("enter the shift key:\n"))
+  if username="encrypt":
+    encrypt(plaintxt=txt,key=shift)
+  elif username="decrypt":
+    decrypt(ciphertxt=txt,key=shift)
+    ontinuecode=input("Type 'yes' if you want to run the code again,'no' if not:")
+    if continuecode=="no":
+      enCode=True
+      print("thankyou!")
   
   
