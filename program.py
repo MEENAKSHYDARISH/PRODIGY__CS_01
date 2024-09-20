@@ -3,31 +3,30 @@ def encrypt(plaintxt,key):
   ciphertxt=""
   for char in plaintxt: 
     position=alphabet.index(char)
-    newpos=(position+key)%26: 
+    newpos=(position+key)%26 
     ciphertxt+=alphabet[newpos]
-    print("the text after encryption is: (ciphertxt)")
+  print(f"the text after encryption is: {ciphertxt}")
 def decrypt(ciphertxt,key): 
   plaintxt=""
   for char in ciphertxt:
    position=alphabet.index(char)
-    newpos=(position-key)%26: 
-    plaintxt+=alphabet[newpos]
-    print("the text after decry is:  position=alphabet.index(char)
-    newpos=(position+key): 
-    ciphertxt+=alphabet[newpos]
-    print("the text after decryption is: (plaintxt)")  
+   newpos=(position-key)%26
+   plaintxt+=alphabet[newpos]
+  print(f"the text after decryption is:{plaintxt}" )
+  
 endCode=False
 while not endCode:
   username=input("Type encrypt for encryption and decrypt for decryption: ")
-  txt=input("type the message")
+  txt=input("type the message: ")
   shift=int(input("enter the shift key:\n"))
-  if username="encrypt":
+  if username=="encrypt":
     encrypt(plaintxt=txt,key=shift)
-  elif username="decrypt":
+  elif username=="decrypt":
     decrypt(ciphertxt=txt,key=shift)
-    ontinuecode=input("Type 'yes' if you want to run the code again,'no' if not:")
-    if continuecode=="no":
-      enCode=True
-      print("thankyou!")
+  continuecode=input("Type 'yes' if you want to run the code again,'no' if not: ")
+  if continuecode=="no":
+    enCode=True
+    print("THANKYOU!")
+    break
   
   
