@@ -8,7 +8,7 @@ def encrypt(plaintxt,key):
   print(f"the text after encryption is: {ciphertxt}")
 def decrypt(ciphertxt,key): 
   plaintxt=""
-  for char in ciphertxt:
+  for char in ciphertxt: 
    position=alphabet.index(char)
    newpos=(position-key)%26
    plaintxt+=alphabet[newpos]
